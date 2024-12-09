@@ -99,7 +99,7 @@ const App = () => {
     const tokensToSell = 1;
     const priceInBnb = await calcSell(tokensToSell, tokenAddress) / tokensToSell;
     console.log(`Token price in BNB: ${priceInBnb}`);
-    const priceInUSD = (priceInBnb * bnbPrice).toFixed(2);
+    const priceInUSD = (priceInBnb * bnbPrice).toFixed(8);
     console.log(`Token price in USD: ${priceInUSD}`);
     setTokenPrice(priceInUSD);
   };
